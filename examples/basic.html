@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Switch Kit example</title>
+<style>button{font-size:2rem;padding:1rem 2rem;margin:.5rem}:focus{outline:6px solid #f2c14e}</style>
+<h1>Switch Kit example</h1>
+<p>Focus moves on its own. Press the space bar to choose.</p>
+<button onclick="out.textContent='Yes'">Yes</button>
+<button onclick="out.textContent='No'">No</button>
+<button onclick="out.textContent='Help'">Help</button>
+<p id="out" aria-live="polite"></p>
+<script type="module">import { startScanning } from "../src/switch-scan.js"; startScanning();</script>
+</html>
